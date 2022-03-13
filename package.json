@@ -1,0 +1,26 @@
+{
+  "name": "ngek",
+  "version": "1.0.0",
+  "description": "Web Solutions from the Future",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdiPat/ngek.git"
+  },
+  "keywords": [
+    "web",
+    "web3",
+    "engineering",
+    "science",
+    "consulting"
+  ],
+  "author": "Aditya Patange",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdiPat/ngek/issues"
+  },
+  "homepage": "https://github.com/AdiPat/ngek#readme"
+}
