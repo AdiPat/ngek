@@ -9,7 +9,8 @@
     "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css && mv dist/index.css dist/styles.css",
     "css:lint": "stylelint src/scss/*.scss --syntax scss || true",
     "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
-    "watch:css": "onchange \"src/scss\" -- npm run build:css"
+    "watch:css": "onchange \"src/scss\" -- npm run build:css",
+    "serve": "browser-sync start --server \"dist\" --files \"dist\""
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/AdiPat/ngek#readme",
   "devDependencies": {
+    "browsersync": "^0.0.1-security",
     "node-sass": "^7.0.1"
   }
 }
