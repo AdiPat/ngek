@@ -8,7 +8,8 @@
     "css:scss": "node-sass --output-style compressed -o dist src/scss",
     "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css && mv dist/index.css dist/styles.css",
     "css:lint": "stylelint src/scss/*.scss --syntax scss || true",
-    "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer"
+    "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
+    "watch:css": "onchange \"src/scss\" -- npm run build:css"
   },
   "repository": {
     "type": "git",
