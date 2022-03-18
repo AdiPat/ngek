@@ -4,7 +4,8 @@
   "description": "Web Solutions from the Future",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:scss": "node-sass --output-style compressed -o dist src/scss"
   },
   "repository": {
     "type": "git",
