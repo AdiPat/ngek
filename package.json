@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/AdiPat/ngek/issues"
   },
-  "homepage": "https://github.com/AdiPat/ngek#readme"
+  "homepage": "https://github.com/AdiPat/ngek#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
 }
