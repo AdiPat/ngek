@@ -10,7 +10,8 @@
     "css:lint": "stylelint src/scss/*.scss --syntax scss || true",
     "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
     "watch:css": "onchange \"src/scss\" -- npm run build:css",
-    "serve": "browser-sync start --server \"dist\" --files \"dist\""
+    "serve": "browser-sync start --server \"dist\" --files \"dist\"",
+    "watch": "run-p serve watch:css"
   },
   "repository": {
     "type": "git",
