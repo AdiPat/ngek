@@ -31,6 +31,8 @@
   "homepage": "https://github.com/AdiPat/ngek#readme",
   "devDependencies": {
     "browsersync": "^0.0.1-security",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "postcss-scss": "^4.0.3",
+    "stylelint": "^14.6.0"
   }
 }
