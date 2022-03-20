@@ -11,7 +11,9 @@
     "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
     "watch:css": "onchange \"src/scss\" -- npm run build:css",
     "serve": "browser-sync start --server \"dist\" --files \"dist\"",
-    "watch": "run-p serve watch:css"
+    "watch": "run-p serve watch:css",
+    "build:html": "posthtml -c posthtml.json",
+    "watch:html": "onchange \"src/views\" -- npm run build:html"
   },
   "repository": {
     "type": "git",
@@ -36,9 +38,13 @@
     "browsersync": "^0.0.1-security",
     "eslint": "^8.11.0",
     "eslint-webpack-plugin": "^3.1.1",
+    "htmlnano": "^2.0.0",
     "imagemin-cli": "^7.0.0",
     "node-sass": "^7.0.1",
     "postcss-scss": "^4.0.3",
+    "posthtml": "^0.16.6",
+    "posthtml-cli": "^0.10.0",
+    "posthtml-modules": "^0.8.0",
     "stylelint": "^14.6.0",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2"
