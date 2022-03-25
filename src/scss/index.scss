@@ -1,4 +1,7 @@
 @import "variables.scss";
+@import "colors.scss";
+@import "landing.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 body {
   color: $primary;
