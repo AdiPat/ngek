@@ -1,0 +1,28 @@
+@import "colors.scss";
+
+.max-header {
+  background-color: $primary-black;
+  //padding: 1rem;
+}
+
+.header-red {
+  color: $primary-red;
+}
+
+.header-title {
+  padding: 80px 40px;
+  padding-bottom: 0;
+}
+
+.header-subtitle {
+  padding: 80px 40px;
+  padding-top: 0;
+  font-size: 1rem;
+}
+
+.landing-bg {
+  background-image: url("images/landing_bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
