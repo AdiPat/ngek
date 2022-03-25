@@ -12,6 +12,7 @@
     "watch:css": "onchange \"src/scss\" -- npm run build:css",
     "serve": "browser-sync start --server \"dist\" --files \"dist\"",
     "watch": "run-p watch:html watch:css serve",
+    "build": "run-s build:html build:css",
     "build:html": "posthtml -c posthtml.json",
     "watch:html": "onchange \"src/views\" -- npm run build:html"
   },
