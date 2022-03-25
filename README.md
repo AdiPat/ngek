@@ -1,6 +1,6 @@
-# NGEK
+# Ngek Website
 
-Angular JS Coursera Course - NGEK
+Ngek Tech website.
 
 Project ID: `52ADIPAT_51120128120IA`
 
