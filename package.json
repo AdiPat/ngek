@@ -13,6 +13,8 @@
     "serve": "browser-sync start --server \"dist\" --files \"dist\"",
     "watch": "run-p watch:html watch:css serve",
     "build": "run-s build:html build:css",
+    "build:images": "imagemin src/images/**/* --out-dir=dist/images",
+    "watch:images": "onchange \"src/images\" -- npm run build:images",
     "build:html": "posthtml -c posthtml.json",
     "watch:html": "onchange \"src/views\" -- npm run build:html"
   },
