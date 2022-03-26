@@ -15,6 +15,8 @@
     "build": "run-s build:*",
     "build:images": "imagemin src/images/**/* --out-dir=dist/images",
     "watch:images": "onchange \"src/images\" -- npm run build:images",
+    "build:js": "webpack --mode=production",
+    "watch:js": "onchange \"src/js\" -- webpack --mode=development",
     "build:html": "posthtml -c posthtml.json",
     "watch:html": "onchange \"src/views\" -- npm run build:html"
   },
@@ -37,7 +39,7 @@
   "homepage": "https://github.com/AdiPat/ngek#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
-    "babel-loader": "^8.2.3",
+    "babel-loader": "^8.2.4",
     "browsersync": "^0.0.1-security",
     "eslint": "^8.11.0",
     "eslint-webpack-plugin": "^3.1.1",
